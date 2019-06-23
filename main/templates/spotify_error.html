@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block title %}Oops{% endblock %}
+{% block head %}
+{{ super() }}
+{% endblock %}
+{% block content %}
+<h1>Oops</h1>
+<p>Got an error back from Spotify: {{ error }}</p>
+<p><a href="{{ url_for('my_form') }}">Back to beginning.</a></p>
+{% endblock %}

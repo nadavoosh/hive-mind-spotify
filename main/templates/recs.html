@@ -14,7 +14,9 @@
         <li><a href={{ item.uri }}>{{ item }}</a></li>
         {% endfor %}
     </ul>
+    <div>Click <a href={{ url_for('redirect_for_playlist') }}>here</a> to log in and turn this into a Spotify playlist</div>
 {% else %}
     <p>Damn, I couldn't find any song recommendations at that link, sorry!</p>
 {% endif %}
+<br>
 {% endblock %}
